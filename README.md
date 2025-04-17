@@ -1,2 +1,2 @@
 # quindiotriburemota.github.io
-landingpage quindiotriburemota
+landingpage quindiotriburemota.
