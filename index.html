@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/tribu.css" rel="stylesheet">
 
 </head>
 
@@ -1143,38 +1144,6 @@
 
           </div>
 
-          <!--div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-12 text-center">
-                  <div class="loading">Cargando</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Tu mensaje ha sido enviado. Gracias!</div>
-
-                  <button type="submit">Enviar Mensaje</button>
-                </div>
-
-              </div>
-            </form>
-          </div>End Contact Form -->
-
         </div>
 
       </div>
@@ -1191,12 +1160,30 @@
           <div class="col-lg-6">
             <h4>Unete a este reto llamado Remotos como estilo de vida</h4>
             <p>🚀 Únete a la tribu que está redefiniendo el trabajo remoto en Colombia.!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribirme"></div>
-              <div class="loading">Cargando</div>
-              <div class="error-message"></div>
-              <div class="sent-message">La solicitud de subscripción ha sido enviada. Te contactaremos pronto!</div>
-            </form>
+           
+            <div class="text-center">
+              <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#formModal">
+                Subscribirme
+              </button>
+            </div>
+          
+            <!-- Modal -->
+            <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="formModalLabel">Formulario de Registro al Ecosistema Digital</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe src="https://forms.gle/iA6EXBq1WmDrYATd7?embedded=true">
+                      Cargando…
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
