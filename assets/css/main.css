@@ -201,6 +201,12 @@ h6 {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .header .btn-getstarted {
+    display: none;
+  }
+}
+
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
@@ -539,7 +545,8 @@ h6 {
 }
 
 .footer .footer-newsletter {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
+  /* background-color: color-mix(in srgb, var(--accent-color), transparent 97%); */
+  background-color: var(--logo-color);
   border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
   border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
   padding: 50px 0;
@@ -547,6 +554,31 @@ h6 {
 
 .footer .footer-newsletter h4 {
   font-size: 24px;
+  color: var(--contrast-color);
+}
+
+.footer .footer-newsletter p {
+  font-size: 16px;
+  color: var(--contrast-color);
+  margin-bottom: 30px;
+}
+
+.footer .container div .text-center {
+  /* display: flex; */
+  /* justify-content:  center; */
+  text-align: center;
+  /* color: var(--logo-color); */
+}
+
+.text-center button {
+  background-color: var(--background-color);
+  color: var(--logo-color);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
 }
 
 .footer .footer-newsletter .newsletter-form {
@@ -618,7 +650,7 @@ h6 {
 }
 
 .footer h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
@@ -1770,8 +1802,8 @@ section,
 }
 
 .team .team-member .member-info p {
-  font-style: italic;
-  font-size: 14px;
+  font-style: medium;
+  font-size: 15px;
   padding-top: 15px;
   line-height: 26px;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
@@ -1792,7 +1824,7 @@ section,
 --------------------------------------------------------------*/
 .clients .swiper-slide img {
   transition: 0.3s;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .clients .swiper-slide img:hover {
@@ -1899,26 +1931,29 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
-  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  /* background: color-mix(in srgb, var(--default-color), transparent 96%); */
+  background-color: var(--logo-color);
   padding: 30px;
 }
 
 .contact .info-item i {
   font-size: 38px;
   line-height: 0;
-  color: var(--accent-color);
+  color: var(--background-color);
 }
 
 .contact .info-item h3 {
   font-size: 20px;
   font-weight: 700;
   margin: 20px 0 10px 0;
+  color: var(--background-color);
 }
 
 .contact .info-item p {
   padding: 0;
   line-height: 24px;
   font-size: 14px;
+  color: var(--background-color);
   margin-bottom: 0;
 }
 
