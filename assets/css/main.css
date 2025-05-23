@@ -26,6 +26,7 @@
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
   --logo-color: #262360;
+  --sec-color: #eaeef4;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -546,7 +547,7 @@ h6 {
 
 .footer .footer-newsletter {
   /* background-color: color-mix(in srgb, var(--accent-color), transparent 97%); */
-  background-color: var(--logo-color);
+  background-color: var(--sec-color);
   border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
   border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
   padding: 50px 0;
@@ -554,12 +555,12 @@ h6 {
 
 .footer .footer-newsletter h4 {
   font-size: 24px;
-  color: var(--contrast-color);
+  color: var(--logo-color);
 }
 
 .footer .footer-newsletter p {
   font-size: 16px;
-  color: var(--contrast-color);
+  color: var(--logo-color);
   margin-bottom: 30px;
 }
 
@@ -571,8 +572,8 @@ h6 {
 }
 
 .text-center button {
-  background-color: var(--background-color);
-  color: var(--logo-color);
+  background-color: var(--logo-color);
+  color: var(--background-color);
   padding: 10px 20px;
   border-radius: 4px;
   font-size: 16px;
@@ -901,7 +902,7 @@ section,
   padding: 120px 0 60px 0;
   display: flex;
   align-items: center;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  background: url(../img/intro/hero-bg.png) top center no-repeat;
   background-size: cover;
 }
 
@@ -1749,8 +1750,8 @@ section,
   bottom: -1px;
   height: 100%;
   background-color: var(--surface-color);
-  -webkit-mask: url("../img/team-shape.svg") no-repeat center bottom;
-  mask: url("../img/team-shape.svg") no-repeat center bottom;
+  /* -webkit-mask: url("../img/intro/team-shape.svg") no-repeat center bottom; */
+  /* mask: url("../img/intro/team-shape.svg") no-repeat center bottom; */
   -webkit-mask-size: contain;
   mask-size: contain;
   z-index: 1;
